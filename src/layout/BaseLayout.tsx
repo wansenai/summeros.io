@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Layout, Menu } from 'antd'
 import {Outlet} from 'react-router-dom'
 import './index.less'
@@ -45,8 +45,9 @@ function BaseLayout() {
   return (
     <Layout className='summeros'>
       <Header>
-        <div className="logo" />
+        <div className="logo" >1</div>
         <Menu
+          className='menu'
           mode="horizontal"
           defaultSelectedKeys={['home']}
           items={menu}

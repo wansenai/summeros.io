@@ -1,6 +1,6 @@
 import {RouteObject, useRoutes} from 'react-router-dom'
 
-import Home from'../pages/home'
+import Home from '../pages/home'
 import BaseLayout from '../layout/BaseLayout'
 // import MainContentRoutes from '@/modules/Main/routes'
 
