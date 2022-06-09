@@ -1,38 +1,65 @@
 import React, { useState, useEffect } from 'react'
 import { Layout, Menu } from 'antd'
 import {Outlet} from 'react-router-dom'
-// import NavBar from './NavBar'
-// import MainContent from './MainContent'
+import './index.less'
 
 const { Header, Content, Footer } = Layout;
 function BaseLayout() {
-    return (
-      <Layout>
-        <Header>
-          <div className="logo" />
-          <Menu
-            theme="dark"
-            mode="horizontal"
-            defaultSelectedKeys={['2']}
-            items={new Array(15).fill(null).map((_, index) => {
-              const key = index + 1;
-              return {
-                key,
-                label: `nav ${key}`,
-              };
-            })}
-          />
-        </Header>
-        <Content style={{ padding: '0 50px' }}>
-      <div className="site-layout-content">
-      <Outlet/>
-      </div>
-    </Content>
-    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
-        
-        {/* <MainContent /> */}
-      </Layout>
-    )
+  const menu = [
+    {
+      label: 'Home',
+      path: '/',
+      key: 'home'
+    },
+    {
+      label: 'About',
+      path: '/',
+      key: 'about'
+    },
+    {
+      label: 'Projects',
+      path: '/',
+      key: 'project',
+      children: [
+        {
+          label: 'Option 1',
+          key: 'setting:1',
+        },
+        {
+          label: 'Option 1',
+          key: 'setting:2',
+        },
+      ]
+    },
+    {
+      label: 'Support',
+      path: '/',
+      key: 'support'
+    },
+    {
+      label: 'Community',
+      path: '/',
+      key: '5'
+    },
+  ]
+  return (
+    <Layout className='summeros'>
+      <Header>
+        <div className="logo" />
+        <Menu
+          mode="horizontal"
+          defaultSelectedKeys={['home']}
+          items={menu}
+        />
+      </Header>
+      <Content style={{ padding: '0 50px' }}>
+        <div className="site-layout-content">
+          <Outlet/>
+        </div>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    </Layout>
+  )
 }
 
 export default BaseLayout;
