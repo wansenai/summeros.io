@@ -9095,6 +9095,13 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
+vite-plugin-fonts@^0.4.0:
+  version "0.4.0"
+  resolved "http://npmreg.qa.91jkys.com/vite-plugin-fonts/-/vite-plugin-fonts-0.4.0.tgz#8ef76d680617cffc4454e8def4890e19001d376c"
+  integrity sha512-BK9eFKxDM5/ptMcFSTpXyBmwPw6rH1wrYqFvOm1QLBezmzPQAhG72JyLDQO5KJ7b1fU65mxo/aHypZ4PJRSEJg==
+  dependencies:
+    fast-glob "^3.2.11"
+
 vite@^2.9.9:
   version "2.9.10"
   resolved "http://npmreg.qa.91jkys.com/vite/-/vite-2.9.10.tgz#f574d96655622c2e0fbc662edd0ed199c60fe91a"

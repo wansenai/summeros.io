@@ -44,8 +44,9 @@ function BaseLayout() {
   ]
   return (
     <Layout className='summeros'>
-      <Header>
-        <div className="logo" >1</div>
+      <Header className='header'>
+        <div className="logo" >
+        </div>
         <Menu
           className='menu'
           mode="horizontal"
@@ -53,12 +54,10 @@ function BaseLayout() {
           items={menu}
         />
       </Header>
-      <Content style={{ padding: '0 50px' }}>
-        <div className="site-layout-content">
+      <Content className="content">
           <Outlet/>
-        </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+      <Footer className="footer" >Ant Design ©2018 Created by Ant UED</Footer>
     </Layout>
   )
 }

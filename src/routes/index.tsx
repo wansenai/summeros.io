@@ -1,8 +1,6 @@
-import {RouteObject, useRoutes} from 'react-router-dom'
-
-import Home from '../pages/home'
-import BaseLayout from '../layout/BaseLayout'
-// import MainContentRoutes from '@/modules/Main/routes'
+import { RouteObject, useRoutes } from 'react-router-dom'
+import Home from '@src/pages/home'
+import BaseLayout from '@src/layout/BaseLayout'
 
 
 const routes: RouteObject[] = [
