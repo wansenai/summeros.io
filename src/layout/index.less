@@ -9,10 +9,57 @@
     .menu {
         background: transparent;
     }
-    .header,
-    .content,
-    .footer
-    {
+    .footer-content,
+    .header{
         width: 1300px;
+    }
+    .footer{
+        width: 100%;
+        background-color: #F7F8FC;
+        .footer-content {
+            margin: 0 auto;
+            .trabook {
+                width: 254px;
+                img {
+                    width: 200px;
+                    transform: translateX(-15px);
+                }
+            }
+            h3 {
+                font-family: 'Volkhov';
+                font-weight: 700;
+                font-size: 24px;
+                color: #222222;
+                margin-bottom: 24px;
+            }
+            p {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                color: #666;
+            }
+            .item {
+                margin-left: 130px;
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    margin-bottom: 18px;
+                    font-weight: 400;
+                    font-size: 18px;
+                }
+            }
+        }
+        .copyright {
+            border-top: 1px solid rgba(153, 153, 153, 0.56);
+            padding: 40px 0;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #666666;
+            opacity: 0.8;
+        }
     }
 }
