@@ -19,19 +19,16 @@ export default defineConfig({
   },
   resolve: {
     alias: [
-      {
-        find: /@src/, replacement: path.resolve(__dirname, './src')
-      },
-      {
-        find: /@image/, replacement: 'src/assets/images'
-      }
+      { find: /@src/, replacement: path.resolve(__dirname, './src') },
+      { find: "/image", replacement: "src/assets/images" },
+      { find: "image", replacement: "src/assets/images" },
     ]
   },
   css: {
     preprocessorOptions: {
       less: {
         modifyVars: {
-          "primary-color": "#EAA516", //全局样式
+          "primary-color": "#67B83C", //全局样式
         },
         javascriptEnabled: true,
       },
