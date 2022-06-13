@@ -5,14 +5,14 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "./",
+  base: './',
   plugins: [
     react(),
     VitePluginFonts({
       google: {
-        families: ['Volkhov'],
-      },
-    }),
+        families: ['Volkhov']
+      }
+    })
   ],
   server: {
     port: 3002
@@ -20,18 +20,18 @@ export default defineConfig({
   resolve: {
     alias: [
       { find: /@src/, replacement: path.resolve(__dirname, './src') },
-      { find: "/image", replacement: "src/assets/images" },
-      { find: "image", replacement: "src/assets/images" },
+      { find: '/image', replacement: 'src/assets/images' },
+      { find: 'image', replacement: 'src/assets/images' }
     ]
   },
   css: {
     preprocessorOptions: {
       less: {
         modifyVars: {
-          "primary-color": "#67B83C", //全局样式
+          'primary-color': '#67B83C' //全局样式
         },
-        javascriptEnabled: true,
-      },
-    },
-  },
+        javascriptEnabled: true
+      }
+    }
+  }
 })

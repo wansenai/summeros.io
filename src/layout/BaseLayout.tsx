@@ -1,10 +1,10 @@
 import React from 'react'
 import { Layout, Menu } from 'antd'
-import {Outlet} from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import getHomeSrc from '@src/utils'
 import './index.less'
 
-const { Header, Content, Footer } = Layout;
+const { Header, Content, Footer } = Layout
 function BaseLayout() {
   const menu = [
     {
@@ -24,12 +24,12 @@ function BaseLayout() {
       children: [
         {
           label: 'Option 1',
-          key: 'setting:1',
+          key: 'setting:1'
         },
         {
           label: 'Option 1',
-          key: 'setting:2',
-        },
+          key: 'setting:2'
+        }
       ]
     },
     {
@@ -41,44 +41,43 @@ function BaseLayout() {
       label: 'Community',
       path: '/',
       key: '5'
-    },
+    }
   ]
   return (
-    <Layout className='summeros'>
-      <Header className='header'>
-        <div className="logo" >
-        </div>
+    <Layout className="summeros">
+      <Header className="header">
+        <div className="logo"></div>
         <Menu
-          className='menu'
+          className="menu"
           mode="horizontal"
           defaultSelectedKeys={['home']}
           items={menu}
         />
       </Header>
-        <Outlet/>
-      <Footer className="footer" >
-        <div className='footer-content'>
-          <div className='flex space-between'>
-            <div className='trabook'>
+      <Outlet />
+      <Footer className="footer">
+        <div className="footer-content">
+          <div className="flex space-between">
+            <div className="trabook">
               <h3>Trabook</h3>
               <p>Book your trip in minute, get full Control for much longer.</p>
               <img src="/image/Home/Social@2x.png" alt="" />
             </div>
-            <div className='flex'>
-              <div className='item'>
+            <div className="flex">
+              <div className="item">
                 <h3>Company</h3>
                 <p>About</p>
                 <p>Careers</p>
                 <p>Logistic</p>
                 <p>Privacy & Policy</p>
               </div>
-              <div className='item'>
+              <div className="item">
                 <h3>Contact</h3>
                 <p>Help/FAQ</p>
                 <p>Press</p>
                 <p>Affilates</p>
               </div>
-              <div className='item'>
+              <div className="item">
                 <h3>More</h3>
                 <p>Press Centre</p>
                 <p>Our Blog</p>
@@ -86,7 +85,7 @@ function BaseLayout() {
               </div>
             </div>
           </div>
-          <div className='flex space-between copyright'>
+          <div className="flex space-between copyright">
             <p>Copyright, Trabook 2022. All rights reserved.</p>
             <p>Terms & Conditions</p>
           </div>
@@ -96,4 +95,4 @@ function BaseLayout() {
   )
 }
 
-export default BaseLayout;
+export default BaseLayout
