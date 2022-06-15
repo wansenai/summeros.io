@@ -104,7 +104,7 @@ function Home() {
           </div>
           <div className="to-do-content flex space-between">
             <div className="card">
-              <img src="/image/Home/Group@2x.png" alt="" />
+              <img src={getHomeSrc('Group@2x.png')} alt="" />
               <h3>Summer Boot</h3>
               <p>
                 Build a decentralized framework based on web3 (currently in the
@@ -112,7 +112,7 @@ function Home() {
               </p>
             </div>
             <div className="card">
-              <img src="/image/Home/Group@2x-1.png" alt="" />
+              <img src={getHomeSrc('Group@2x-1.png')} alt="" />
               <h3>Summer Mybatis</h3>
               <p>
                 ORM framework based on rust language. It is used to simplify
@@ -120,7 +120,7 @@ function Home() {
               </p>
             </div>
             <div className="card">
-              <img src="/image/Home/Group@2x-2.png" alt="" />
+              <img src={getHomeSrc('Group@2x-2.png')} alt="" />
               <h3>Summer IPFS Client</h3>
               <p>
                 Client developed based on rust language for connecting to IPFs
