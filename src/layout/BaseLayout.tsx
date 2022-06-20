@@ -1,56 +1,59 @@
-import React from 'react'
-import { Layout, Menu } from 'antd'
-import { Outlet } from 'react-router-dom'
-import getHomeSrc from '@src/utils'
-import './index.less'
+import React from "react";
+import { Layout, Menu } from "antd";
+import { Outlet } from "react-router-dom";
+import getHomeSrc from "@src/utils";
+import "./index.less";
 
-const { Header, Content, Footer } = Layout
+const { Header, Content, Footer } = Layout;
 function BaseLayout() {
   const menu = [
     {
-      label: 'Home',
-      path: '/',
-      key: 'home'
+      label: "Home",
+      path: "/",
+      key: "home",
     },
     {
-      label: 'About',
-      path: '/',
-      key: 'about'
+      label: "About",
+      path: "/",
+      key: "about",
     },
     {
-      label: 'Projects',
-      path: '/',
-      key: 'project',
+      label: "Projects",
+      path: "/",
+      key: "project",
       children: [
         {
-          label: 'Option 1',
-          key: 'setting:1'
+          label: "Option 1",
+          key: "setting:1",
         },
         {
-          label: 'Option 1',
-          key: 'setting:2'
-        }
-      ]
+          label: "Option 1",
+          key: "setting:2",
+        },
+      ],
     },
     {
-      label: 'Support',
-      path: '/',
-      key: 'support'
+      label: "Support",
+      path: "/",
+      key: "support",
     },
     {
-      label: 'Community',
-      path: '/',
-      key: '5'
-    }
-  ]
+      label: "Community",
+      path: "/",
+      key: "5",
+    },
+  ];
   return (
     <Layout className="summeros">
       <Header className="header">
-        <div className="logo"></div>
+        <div className="logo">
+          <img src={getHomeSrc("logo.png")} alt="" />
+          <span>Summer Open Source</span>
+        </div>
         <Menu
           className="menu"
           mode="horizontal"
-          defaultSelectedKeys={['home']}
+          defaultSelectedKeys={["home"]}
           items={menu}
         />
       </Header>
@@ -61,7 +64,7 @@ function BaseLayout() {
             <div className="trabook">
               <h3>Trabook</h3>
               <p>Book your trip in minute, get full Control for much longer.</p>
-              <img src="/image/Home/Social@2x.png" alt="" />
+              <img src={getHomeSrc("Social@2x.png")} alt="" />
             </div>
             <div className="flex">
               <div className="item">
@@ -92,7 +95,7 @@ function BaseLayout() {
         </div>
       </Footer>
     </Layout>
-  )
+  );
 }
 
-export default BaseLayout
+export default BaseLayout;

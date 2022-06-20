@@ -1,4 +1,5 @@
-# Summeros
+
+# Summeros Io
 
 This project is a public website for demonstrating the summer open source project.
 
@@ -27,3 +28,5 @@ npm run build OR yarn build # Build and output production file(dist)
 If there is an error message or other idea, please submit to PR
 
 Look forward to your contributions!
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fsummer-os%2Fsummeros.io.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fsummer-os%2Fsummeros.io?ref=badge_large)
