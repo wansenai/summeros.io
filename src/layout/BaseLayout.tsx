@@ -23,12 +23,16 @@ function BaseLayout() {
       key: "project",
       children: [
         {
-          label: "Option 1",
+          label: "Summer Boot",
           key: "setting:1",
         },
         {
-          label: "Option 1",
+          label: "Summer MyBatis",
           key: "setting:2",
+        },
+        {
+          label: "Summer Framework",
+          key: "setting:3",
         },
       ],
     },

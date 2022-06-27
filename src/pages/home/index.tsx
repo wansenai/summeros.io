@@ -69,12 +69,12 @@ function Home() {
           <div className="select-item">
             <Select
               placeholder="Project"
-              style={{ width: 120 }}
+              style={{ width: 170 }}
               bordered={false}
             >
-              <Option value="jack">Jack</Option>
-              <Option value="lucy">Lucy</Option>
-              <Option value="Yiminghe">yiminghe</Option>
+              <Option value="summer-boot">Summer Boot</Option>
+              <Option value="summer-mybatis">Summer MyBatis</Option>
+              <Option value="summer-framework">Summer Framework</Option>
             </Select>
             <p className="ignore">Choose a project</p>
           </div>
@@ -84,7 +84,7 @@ function Home() {
               style={{ width: 120 }}
               bordered={false}
             >
-              <Option value="lucy">Lucy</Option>
+              <Option value="1.0.0">1.0.0</Option>
             </Select>
             <p className="ignore">Choose a version</p>
           </div>
